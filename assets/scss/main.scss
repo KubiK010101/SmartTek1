@@ -1,0 +1,136 @@
+
+// GLOBAL STYLES
+@import "global/custom-variables";
+
+@import "global/functions";
+@import "global/bootstrap-variables";
+@import "global/mixins";
+@import "global/reboot";
+@import "global/type";
+@import "global/grid";
+@import "global/forms";
+@import "global/buttons";
+@import "global/utilities";
+@import "global/fonts";
+@import "global/tabs";
+
+// PLUGINS STYLE
+@import "plugins/icons";
+
+// BLOCKS STYLE
+@import "blocks/popup-block";
+
+@import "blocks/page-header";
+
+@import "blocks/page-footer";
+@import "blocks/nav";
+@import "blocks/partners-card";
+@import "blocks/nav-menu";
+@import "blocks/plan";
+@import "blocks/stats";
+@import "blocks/read-about";
+@import "blocks/resources";
+@import "blocks/help";
+@import "blocks/get-started";
+@import "blocks/sign-up";
+@import "blocks/customers";
+
+//OWLS
+@import "blocks/owl-first";
+@import "blocks/owl-second";
+@import "blocks/owl-third";
+
+body {
+	position: relative;
+	background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+	font-family: 'Quicksand', sans-serif;
+	color: #000;
+	font-weight: 400;
+	line-height: 1.2;
+	font-size: 16px;
+	min-width: 320px;
+	
+}
+.app-container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1440px;
+	@media (min-width: 576px) {
+		max-width: 576px;
+	}
+	@media (min-width: 768px) {
+		//max-width: 100%;
+		max-width: 768px;
+	}
+	@media (min-width: 992px) {
+		max-width: 992px;
+		//max-width: 100%;
+	}
+	@media (min-width: 1200px) {
+		max-width: 1200px;
+	}
+	@media (min-width: 1400px) {
+		max-width: 1400px;
+	}
+	@media (min-width: 1660px) {
+		max-width: 1660px;
+	}
+}
+
+
+.lines{
+	font-size: 55px;
+}
+.js-collapse{
+	text-align: left;
+	position: relative;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: 0.03em;
+	color: #8E96B7;
+	&:hover{
+		cursor: pointer;
+	}
+	&:before{
+		content: " ";
+		position: absolute;
+		background-image: url("../img/collapse.svg");
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 10px;
+		left: -30px;
+		top: 5px;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+
+	}
+}
+.js-collapse.open{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: 0.03em;
+	color: #495274;
+	&:before{
+		content: " ";
+		position: absolute;
+		background-image: url("../img/collapse.svg");
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 10px;
+		left: -30px;
+		top: 5px;
+		transform: rotate(180deg);
+
+
+	}
+}

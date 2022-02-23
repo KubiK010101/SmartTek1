@@ -1,0 +1,41 @@
+
+.btn {
+  @include reset-button();
+
+  background: #D2E1FF;
+  
+  text-align: center;
+  border-radius: 0;
+  color: #3A79FF!important;
+
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 20px;
+
+  padding: 13px 16px;
+
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    background-color: lighten($brand-color, 5%);
+    box-shadow: none;
+
+  }
+  
+  &:active {
+    transform: translateY(3px);
+    box-shadow: none;
+    background-color: darken($brand-color, 10%);
+  }
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    text-decoration: none !important;
+    outline: none !important;
+  }
+}

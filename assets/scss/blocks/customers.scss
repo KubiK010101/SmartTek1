@@ -1,0 +1,105 @@
+.customers {
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+  overflow: hidden;
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 109px;
+    padding-bottom: 109px;
+  }
+  &__wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__content-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10000;
+    @media (max-width: 991.98px ) {
+      width: 100%;
+    }
+  }
+  &__content {
+    margin-right: 10%;
+    width: 50%;
+
+    @media (max-width: 1199.98px) {
+      width: 65%;
+    }
+    @media (max-width: 767.98px) {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #3D4F9F;
+    margin-bottom: 31px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    padding: 0;
+    color: #3D4F9F;
+    margin-bottom: 14px;
+  }
+  &__description {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+
+    color: #A4ABC8;
+  }
+  &__owl-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    @media (max-width: 991.98px ) {
+      width: 100%;
+      margin-left: 25%;
+
+    }
+    @media (max-width: 767.98px) {
+      width: 100%;
+      margin-left: 0;
+
+    }
+  }
+  &__owl-inner {
+    margin-left: 21px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 991.98px ) {
+      overflow: visible;
+      margin-left: 0;
+    }
+  }
+  &__card {
+    padding: 40px 70px;
+    background: #fff;
+    max-width: 423px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__card-img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 62px!important;
+    height: 62px!important;
+    border: none;
+  }
+}

@@ -1,0 +1,21 @@
+.owl-first{
+  position: relative;
+  .owl-dots{
+    width: 100%;
+    bottom: 30px;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  button{
+    background: #CDD3E4;
+    border-radius: 100%;
+    margin: 0 12px;
+    width: 8px;
+    height: 8px;
+    &.active {
+      background: #0aa7ff;
+    }
+  }
+  }
+}

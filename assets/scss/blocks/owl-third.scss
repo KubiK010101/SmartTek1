@@ -1,0 +1,37 @@
+.owl-third {
+  //margin-left: 21px;
+
+  max-width: 423px;
+  @media (max-width: 991.98px ) {
+    margin-left: 0;
+  }
+  .owl-stage-outer {
+    overflow: visible!important;
+    @media (max-width: 991.98px ) {
+
+    }
+  }
+  .owl-item {
+    opacity: .4;
+    transition: .4s opacity ease;
+    &.active {
+      opacity: 1;
+    }
+  }
+  .owl-dots{
+    margin-top: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button{
+      background: #CDD3E4;
+      border-radius: 100%;
+      margin: 0 12px;
+      width: 8px;
+      height: 8px;
+      &.active {
+        background: #0aa7ff;
+      }
+    }
+  }
+}
